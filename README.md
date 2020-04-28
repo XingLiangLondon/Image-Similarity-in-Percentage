@@ -3,7 +3,7 @@
 ## Siamese network to compare image similarity in percentage - based on Keras deep learning model (VGG16, ResNet50) &amp; cosine similarity, euclidean similarity
 
 ### Accuracy
-The cosine distances are shown in the table.
+The cosine similarity and euclidean similarity are shown in the table.
 |image1 | image2| cosine similarity (VGG16) |euclidean similarity (VGG16) | cosine similarity (ResNet50) |euclidean similarity (ResNet50) |
 | --- | --- | --- | --- | --- | --- |
 |<img src="images/selfiemonkey1.jpg" width=250 >|<img src="images/selfiemonkey2.png" width=250 >|**84.51%**|0.01326|91.28%|0.05116|
