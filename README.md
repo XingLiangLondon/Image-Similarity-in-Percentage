@@ -25,6 +25,10 @@ The cosine similarity and euclidean similarity are shown in the table.
 |<img src="images/boris1.jpg" width=250  >|<img src="images/boris2.jpg" width=250 >|**77.01%**|0.02064|82.51%|0.04565|
 | --- | --- | --- | --- | --- | --- |
 |<img src="images/building.jpg" width=250  > Original Image|<img src="images/building_cropped.jpg" width=250 > Cropped Image|**93.75%**|0.03695|95.31%|0.07801|
+| --- | --- | --- | --- | --- | --- |
+|<img src="images/n04263257_16176.JPEG" width=250  > Original Image|<img src="images/n04263257_16176.png" width=250 > Adversarial  Image|**74.47%**|0.01384|90.14%|0.06188|
+| --- | --- | --- | --- | --- | --- |
+|<img src="images/n04310018_10510.JPEG" width=250  > Original Image|<img src="images/n04310018_10510.png" width=250 > Adversarial  Image|**79.60%**|0.01324|91.45%|0.04503|
 
 
 ## License
@@ -32,3 +36,4 @@ The cosine similarity and euclidean similarity are shown in the table.
 - The ResNet50 weights are ported from the ones [released by Kaiming He](https://github.com/KaimingHe/deep-residual-networks) under the [MIT license](https://github.com/KaimingHe/deep-residual-networks/blob/master/LICENSE).
 - The VGG16 and VGG19 weights are ported from the ones [released by VGG at Oxford](http://www.robots.ox.ac.uk/~vgg/research/very_deep/) under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/).
 - The Inception v3 weights are trained by ourselves and are released under the MIT license.
+- Thanks to DAmageNet: A Universal Adversarial Dataset https://arxiv.org/abs/1912.07160
