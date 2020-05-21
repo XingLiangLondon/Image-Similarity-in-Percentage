@@ -29,7 +29,8 @@ The cosine similarity and euclidean similarity are shown in the table.
 |<img src="images/n04263257_16176.JPEG" width=250  > Original Image|<img src="images/n04263257_16176.png" width=250 > Adversarial  Image|**74.47%**|0.01384|90.14%|0.06188|
 | --- | --- | --- | --- | --- | --- |
 |<img src="images/n04310018_10510.JPEG" width=250  > Original Image|<img src="images/n04310018_10510.png" width=250 > Adversarial  Image|**79.60%**|0.01324|91.45%|0.04503|
-
+| --- | --- | --- | --- | --- | --- |
+|<img src="images/news1.jpg" width=250  > Original Image|<img src="images/news2.jpg" width=250 > Screenshot Image |**97.95%**|0.06415|98.69%|0.13120|
 
 ## License
 - This image similarity model is developed based on Keras deep learning model from https://github.com/fchollet/deep-learning-models
