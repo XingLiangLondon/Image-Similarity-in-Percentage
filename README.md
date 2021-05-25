@@ -38,3 +38,14 @@ The cosine similarity and euclidean similarity are shown in the table.
 - The VGG16 and VGG19 weights are ported from the ones [released by VGG at Oxford](http://www.robots.ox.ac.uk/~vgg/research/very_deep/) under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/).
 - The Inception v3 weights are trained by ourselves and are released under the MIT license.
 - Thanks to DAmageNet: A Universal Adversarial Dataset https://arxiv.org/abs/1912.07160
+
+
+## Citations
+```
+@inproceedings{Panagiotis2021,
+  author = {Panagiotis Kasnesis, Ryan Heartfield, Xing Liang, Lazaros Toumanidis, Georgia Sakellari, Charalampos Patrikakis, George Loukas},
+  booktitle = {Journal of Applied Soft Computing},
+  title = {Transformer-based identification of stochastic information cascades in social networks using text and image similarity},
+  year = {2021}
+}
+```
