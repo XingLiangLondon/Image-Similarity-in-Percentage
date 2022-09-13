@@ -11,28 +11,28 @@ from __future__ import print_function
 
 import numpy as np
 import warnings
-
-from keras.layers import Input
-from keras import layers
-from keras.layers import Dense
-from keras.layers import Activation
-from keras.layers import Flatten
-from keras.layers import Conv2D
-from keras.layers import MaxPooling2D
-from keras.layers import GlobalMaxPooling2D
-from keras.layers import ZeroPadding2D
-from keras.layers import AveragePooling2D
-from keras.layers import GlobalAveragePooling2D
-from keras.layers import BatchNormalization
-from keras.models import Model
-from keras.preprocessing import image
-import keras.backend as K
-from keras.utils import layer_utils
-from keras.utils.data_utils import get_file
-from keras.applications.imagenet_utils import decode_predictions
-from keras.applications.imagenet_utils import preprocess_input
+import tensorflow as tf
+from tensorflow.keras.layers import Input
+from tensorflow.keras import layers
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.layers import Activation
+from tensorflow.keras.layers import Flatten
+from tensorflow.keras.layers import Conv2D
+from tensorflow.keras.layers import MaxPooling2D
+from tensorflow.keras.layers import GlobalMaxPooling2D
+from tensorflow.keras.layers import ZeroPadding2D
+from tensorflow.keras.layers import AveragePooling2D
+from tensorflow.keras.layers import GlobalAveragePooling2D
+from tensorflow.keras.layers import BatchNormalization
+from tensorflow.keras.models import Model
+from tensorflow.keras.preprocessing import image
+import tensorflow.keras.backend as K
+from tensorflow.keras import utils as layer_util
+from tensorflow.keras.utils import get_file
+from tensorflow.keras.applications.imagenet_utils import decode_predictions
+from tensorflow.keras.applications.imagenet_utils import preprocess_input
 from keras_applications.imagenet_utils import _obtain_input_shape
-from keras.engine.topology import get_source_inputs
+from tensorflow.keras.utils import get_source_inputs
 
 
 WEIGHTS_PATH = 'https://github.com/fchollet/deep-learning-models/releases/download/v0.2/resnet50_weights_tf_dim_ordering_tf_kernels.h5'

@@ -8,9 +8,10 @@ import os
 import numpy as np
 from resnet50 import ResNet50
 #from keras.models import Model
-from keras.layers import Input
-from keras.preprocessing import image
-from keras.applications.imagenet_utils import preprocess_input
+
+from tensorflow.keras.layers import Input
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.applications.imagenet_utils import preprocess_input
 from sklearn.metrics.pairwise import cosine_similarity
 #from scipy.spatial import distance
 
@@ -47,7 +48,7 @@ data_dir_list = os.listdir(data_path)
 
 img_data_list=[]
 for dataset in data_dir_list:
-
+		print(dataset)
 		img_path = data_path + '/'+ dataset
 		img = image.load_img(img_path, target_size=(224, 224))
 		x = image.img_to_array(img)
