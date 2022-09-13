@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-'''VGG16 model for Keras.
+'''VGG16 model for tensorflow.Keras.
 
 # Reference:
 
@@ -11,22 +11,22 @@ from __future__ import print_function
 import numpy as np
 import warnings
 
-from keras.models import Model
-from keras.layers import Flatten
-from keras.layers import Dense
-from keras.layers import Input
-from keras.layers import Conv2D
-from keras.layers import MaxPooling2D
-from keras.layers import GlobalMaxPooling2D
-from keras.layers import GlobalAveragePooling2D
-from keras.preprocessing import image
-from keras.utils import layer_utils
-from keras.utils.data_utils import get_file
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Flatten
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.layers import Input
+from tensorflow.keras.layers import Conv2D
+from tensorflow.keras.layers import MaxPooling2D
+from tensorflow.keras.layers import GlobalMaxPooling2D
+from tensorflow.keras.layers import GlobalAveragePooling2D
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras import utils as layer_utils
+from tensorflow.keras.utils import get_file
 from keras import backend as K
-from keras.applications.imagenet_utils import decode_predictions
-from keras.applications.imagenet_utils import preprocess_input
+from tensorflow.keras.applications.imagenet_utils import decode_predictions
+from tensorflow.keras.applications.imagenet_utils import preprocess_input
 from keras_applications.imagenet_utils import _obtain_input_shape
-from keras.engine.topology import get_source_inputs
+from tensorflow.keras.utils import get_source_inputs
 
 
 WEIGHTS_PATH = 'https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_tf_dim_ordering_tf_kernels.h5'
@@ -43,7 +43,7 @@ def VGG16(include_top=True, weights='imagenet',
     on ImageNet. Note that when using TensorFlow,
     for best performance you should set
     `image_data_format="channels_last"` in your Keras config
-    at ~/.keras/keras.json.
+    at ~/.keras/tensorflow.keras.json.
 
     The model and the weights are compatible with both
     TensorFlow and Theano. The data format
@@ -186,7 +186,7 @@ def VGG16(include_top=True, weights='imagenet',
                               'For best performance, set '
                               '`image_data_format="channels_last"` in '
                               'your Keras config '
-                              'at ~/.keras/keras.json.')
+                              'at ~/.keras/tensorflow.keras.json.')
     return model
 
 

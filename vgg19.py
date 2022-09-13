@@ -11,20 +11,20 @@ from __future__ import print_function
 import numpy as np
 import warnings
 
-from keras.models import Model
-from keras.layers import Flatten, Dense, Input
-from keras.layers import Conv2D
-from keras.layers import MaxPooling2D
-from keras.layers import GlobalMaxPooling2D
-from keras.layers import GlobalAveragePooling2D
-from keras.preprocessing import image
-from keras.utils import layer_utils
-from keras.utils.data_utils import get_file
-from keras import backend as K
-from keras.applications.imagenet_utils import decode_predictions
-from keras.applications.imagenet_utils import preprocess_input
-from keras_applications.imagenet_utils import _obtain_input_shape
-from keras.engine.topology import get_source_inputs
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Flatten, Dense, Input
+from tensorflow.keras.layers import Conv2D
+from tensorflow.keras.layers import MaxPooling2D
+from tensorflow.keras.layers import GlobalMaxPooling2D
+from tensorflow.keras.layers import GlobalAveragePooling2D
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras import utils as layer_utils
+from tensorflow.keras.utils import get_file
+from tensorflow.keras import backend as K
+from tensorflow.keras.applications.imagenet_utils import decode_predictions
+from tensorflow.keras.applications.imagenet_utils import preprocess_input
+from tensorflow.keras_applications.imagenet_utils import _obtain_input_shape
+from tensorflow.keras.utils import get_source_inputs
 
 
 WEIGHTS_PATH = 'https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg19_weights_tf_dim_ordering_tf_kernels.h5'

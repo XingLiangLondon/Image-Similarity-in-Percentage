@@ -6,11 +6,11 @@ Image Similarity using VGG16
 """
 import os
 import numpy as np
-from keras.layers import Input
-from keras.models import Model
+from tensorflow.keras.layers import Input
+from tensorflow.keras.models import Model
 from vgg16 import VGG16
-from keras.preprocessing import image
-from keras.applications.imagenet_utils import preprocess_input
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.applications.imagenet_utils import preprocess_input
 from sklearn.metrics.pairwise import cosine_similarity
 #from scipy.spatial import distance
 '''
@@ -45,7 +45,7 @@ feature_model = Model(inputs=model.input,outputs=model.get_layer(layer_name).out
 
 # Load images in the images folder into array
 cwd_path = os.getcwd()
-data_path =cwd_path + '/images'
+data_path =cwd_path + '/imgs'
 data_dir_list = os.listdir(data_path)
 
 img_data_list=[]
